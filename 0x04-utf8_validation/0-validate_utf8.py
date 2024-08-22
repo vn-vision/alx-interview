@@ -20,8 +20,6 @@ def validUTF8(data):
     # if the length is past '08b': invalid
 
     for enc_num in encoded:
-        print(enc_num)
-
         if len(enc_num) > 8:
             _bool.append(False)
         else:
