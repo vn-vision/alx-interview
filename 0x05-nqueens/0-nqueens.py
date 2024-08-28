@@ -15,7 +15,7 @@ if len(sys.argv) != 2:
 N = sys.argv[1]
 
 try:
-    N = int(N) 
+    N = int(N)
     if not isinstance(N, int):
         print("N must be a number")
         exit(1)
