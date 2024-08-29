@@ -81,4 +81,3 @@ solve_nqueens(board, 0, solutions)
 # Print all solutions
 for solution in solutions:
     print(solution)
-print(len(solutions))
