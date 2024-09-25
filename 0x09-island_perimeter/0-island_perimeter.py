@@ -22,7 +22,7 @@ def island_perimeter(grid):
                 cell = 4
                 # check adjacent cells, if cell == 1, reduce cell by 1
                 # traverse vertically
-                if row - 1 > 0 and grid[row - 1][col] == 1:
+                if row - 1 >= 0 and grid[row - 1][col] == 1:
                     # adjacent above
                     cell -= 1
                 if row + 1 < max_height and grid[row + 1][col] == 1:
@@ -30,7 +30,7 @@ def island_perimeter(grid):
                     cell -= 1
 
                 # traverse horizontal left
-                if col - 1 > 0 and grid[row][col - 1] == 1:
+                if col - 1 >= 0 and grid[row][col - 1] == 1:
                     cell -= 1
                 # traverse horizontal right
                 if col + 1 < max_width and grid[row][col + 1] == 1:
